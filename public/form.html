@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | CineCatálogo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+<header class="cabecalho"><a class="marca" href="index.html">Cine<span>Catálogo</span></a><nav aria-label="Menu principal"><a href="index.html" >Catálogo</a><a href="form.html" aria-current="page">Cadastro</a></nav></header>
+<main class="pagina-formulario">
+    <a class="voltar" href="index.html">← Voltar ao catálogo</a>
+    <h1 id="titulo-pagina">Cadastrar obra</h1>
+    <p>Preencha os dados do filme ou da série.</p>
+    <form id="formulario">
+        <div class="campo"><label for="titulo">Título</label><input id="titulo" name="titulo" maxlength="100" placeholder="Ex.: O mistério do farol" required></div>
+        <div class="linha">
+            <div class="campo"><label for="tipo">Tipo</label><select id="tipo" name="tipo" required><option value="">Selecione</option><option>Filme</option><option>Série</option></select></div>
+            <div class="campo"><label for="ano">Ano de lançamento</label><input id="ano" name="ano_lancamento" type="number" min="1888" max="2100" step="1" placeholder="Ex.: 2024" required></div>
+        </div>
+        <p id="mensagem" role="status" aria-live="polite"></p>
+        <div class="acoes-formulario"><button id="salvar" type="submit">Salvar obra</button><a class="botao secundario" href="index.html">Cancelar</a></div>
+    </form>
+</main>
+<footer>Projeto escolar de catálogo de filmes e séries.</footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes e séries | CineCatálogo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="catalogo.js" defer></script>
+</head>
+<body>
+<header class="cabecalho"><a class="marca" href="index.html">Cine<span>Catálogo</span></a><nav aria-label="Menu principal"><a href="index.html" aria-current="page">Catálogo</a><a href="form.html" >Cadastro</a></nav></header>
+<main>
+    <section class="apresentacao">
+        <p class="etiqueta">FILMES E SÉRIES</p>
+        <h1>Histórias para conhecer.</h1>
+        <p>Explore o catálogo e cadastre suas próprias obras.</p>
+        <a class="botao" href="form.html">Cadastrar uma obra</a>
+    </section>
+    <section aria-labelledby="titulo-catalogo">
+        <div class="titulo-secao"><h2 id="titulo-catalogo">Nosso catálogo</h2><span id="quantidade"></span></div>
+        <div class="filtros">
+            <div><label for="busca">Buscar pelo título</label><input id="busca" type="search" placeholder="Digite o nome da obra"></div>
+            <div><label for="tipo-filtro">Tipo</label><select id="tipo-filtro"><option value="">Todos</option><option>Filme</option><option>Série</option></select></div>
+        </div>
+        <p id="mensagem" role="status" aria-live="polite">Carregando catálogo...</p>
+        <div id="catalogo" class="grade"></div>
+    </section>
+</main>
+<footer>Projeto escolar de catálogo de filmes e séries.</footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "cinecatalogo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Catálogo escolar de filmes e séries",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.24.6"
+  }
+}
